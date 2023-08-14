@@ -1,0 +1,117 @@
+:root {
+    font-size: 62.5%;
+
+    --text-red: #A54328;
+    --text-button: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-size: 1.6rem;
+    color: var(--text-red);
+    font-family: 'Source Serif Pro', serif;
+    background: url("./image/old-paper.png"), lightgray 50% / cover no-repeat;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 3.4rem;
+    max-width: 32rem;
+    margin-inline: auto;
+    padding: 5.6rem 4rem;
+    box-sizing: content-box;
+}
+
+.recipe {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 4.6rem;
+}
+
+.recipe h1,
+.ingredients h2 {
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+}
+
+.recipe img {
+    width: 100%;
+}
+
+p, li, strong {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+
+.ingredients h2 {
+    margin-bottom: 3.2rem;
+}
+
+.ingredients ul {
+    margin-bottom: 2.4rem;
+}
+
+.ingredients strong {
+    margin-bottom: 1.2rem;
+}
+
+.ingredients ul li,
+.ingredients ol li {
+    margin-left: 1.5em;
+}
+
+button {
+    margin-top: 3.2rem;
+    border: none;
+    background-color: var(--text-red);
+    font-size: 1rem;
+    color: var(--text-button);
+    border-radius: 0.6rem;
+    padding: .8rem 1.2rem;
+    font-family: 'Source Serif 4', serif;
+}
+
+@media (min-width: 1120px) {
+    main {
+        flex-direction: row;
+        align-items: center;
+        padding: 9.5rem 6rem;
+        gap: 18.9rem;
+        max-width: fit-content;
+    }
+
+    .recipe {
+        max-width: 43.5rem;
+    }
+    
+    .ingredients {
+        max-width: 52.5rem;
+    }
+
+    p, li, strong {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .recipe h1,
+    .ingredients h2 {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+
+    button {
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        padding: 1rem 2rem;
+    }
+}
